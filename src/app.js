@@ -42,7 +42,7 @@ app.get('/weathery', (req, res) => {
                 return res.render('error', { error })
             }
             res.render('home',{
-				icon: forecastData.icon,
+				icon: "/images/" + forecastData.icon +".png",
 				temperature: forecastData.temperature,
 				descriptions: forecastData.descriptions,
 				humidity: forecastData.humidity,

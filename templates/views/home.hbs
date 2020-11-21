@@ -20,11 +20,14 @@
 				</div>
 			</form>
 			<div class="forecast">
-            	<img alt="weather-icon" src="#" width="45" height="45">
-       
+            	<img alt="weather-icon" src={{icon}} width="70" height="70">
 				<div class="data">
 					<div class="temperature">{{temperature}}°C</div>
-					<div>
+					<div class="forecast-text">
+						<label><i class="fas fa-map-marker-alt"></i> </label>
+						<span> {{location}}</span>
+					</div>
+					<div class="forecast-text">
 						<label>Description </label>
 						<span> {{descriptions}}</span>
 					</div>

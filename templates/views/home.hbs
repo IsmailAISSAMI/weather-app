@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>head}}
+	<title>{{title}}</title>
+	<script src='/js/front-script.js' defer></script>
+</head>
+<body>
+	{{>navbar}}
+	<main>
+		<div class="container">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+						<i class="fa fa-search fa-lg" style="color:#000;"></i>
+					</button>
+					</div>
+				</div>
+			</form>
+			<div class="forecast">
+            	<img alt="weather-icon" src="#" width="45" height="45">
+       
+				<div class="data">
+					<div class="temperature">{{temperature}}°C</div>
+					<div>
+						<label>Description </label>
+						<span> {{descriptions}}</span>
+					</div>
+					<div>
+						<label>Humidity</label>
+						<span> {{humidity}}%</span>
+					</div>
+					<div>
+						<label><i class="fas fa-wind"></i> Wind</label>
+						<span> {{wind}} m/s</span>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</main>
+
+	{{>footer}}
+	{{>scripts}}
+</body>
+</html>
